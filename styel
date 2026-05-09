@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#120000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at center,#ff66001f,#000000 70%),
+    url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity:0.9;
+    z-index:-1;
+}
+
+/* TOP BAR */
+
+.topbar{
+    width:100%;
+    padding:16px 25px;
+    border-bottom:1px solid rgba(255,136,0,0.3);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1a0a00;
+}
+
+.topbar h3{
+    color:#ffb300;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+/* MAIN */
+
+.container{
+    width:100%;
+    max-width:420px;
+    margin:auto;
+    padding:30px 20px 50px;
+    text-align:center;
+}
+
+/* PROFILE */
+
+.profile-ring{
+    width:180px;
+    height:180px;
+    margin:30px auto;
+    border-radius:50%;
+    background:linear-gradient(45deg,#ff6600,#ffd000);
+    padding:8px;
+    box-shadow:0 0 35px rgba(255,140,0,0.6);
+}
+
+.profile-inner{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background:#180000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+    font-family:'Anton',sans-serif;
+    color:#ff7700;
+}
+
+/* BADGES */
+
+.badges{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.badge{
+    border:1px solid rgba(255,153,0,0.4);
+    padding:10px 18px;
+    border-radius:50px;
+    background:rgba(255,120,0,0.08);
+    color:#ffcf7d;
+    font-weight:600;
+    font-size:14px;
+    backdrop-filter:blur(5px);
+}
+
+/* TITLE */
+
+.main-title{
+    font-family:'Anton',sans-serif;
+    font-size:58px;
+    line-height:0.95;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    background:linear-gradient(#ff7b00,#ffd000);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0 0 20px rgba(255,140,0,0.3);
+}
+
+.subtitle{
+    color:#d6b18f;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+/* PREMIUM BOX */
+
+.premium-box{
+    width:100%;
+    padding:18px;
+    border-radius:22px;
+    border:1px solid rgba(255,136,0,0.3);
+    background:rgba(255,120,0,0.08);
+    color:#ffc36b;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(255,136,0,0.15);
+}
+
+/* FEATURES */
+
+.features{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:40px;
+}
+
+.feature{
+    padding:14px 18px;
+    border-radius:18px;
+    border:1px solid rgba(255,136,0,0.25);
+    background:rgba(255,255,255,0.03);
+    font-weight:500;
+    color:#fff;
+    font-size:15px;
+}
+
+/* STATS */
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:40px;
+}
+
+.stat{
+    flex:1;
+}
+
+.stat h2{
+    font-family:'Anton',sans-serif;
+    font-size:42px;
+    color:#ffb300;
+    letter-spacing:2px;
+}
+
+.stat p{
+    color:#b8a38d;
+    letter-spacing:2px;
+    font-size:13px;
+}
+
+/* BUTTON */
+
+.join-btn{
+    width:100%;
+    padding:24px;
+    border-radius:26px;
+    border:none;
+    background:linear-gradient(90deg,#ffd000,#ff8800);
+    color:#000;
+    font-size:22px;
+    font-weight:800;
+    cursor:pointer;
+    margin-bottom:30px;
+    box-shadow:0 0 35px rgba(255,153,0,0.45);
+    transition:0.3s;
+}
+
+.join-btn:hover{
+    transform:scale(1.03);
+}
+
+/* WINNING BOX */
+
+.win-box{
+    padding:28px;
+    border-radius:26px;
+    border:1px solid rgba(255,136,0,0.25);
+    background:rgba(255,255,255,0.03);
+    box-shadow:0 0 30px rgba(255,136,0,0.08);
+}
+
+.win-box h2{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.win-box p{
+    color:#ffb300;
+    font-weight:700;
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.main-title{
+    font-size:50px;
+}
+
+.stat h2{
+    font-size:34px;
+}
+
+.join-btn{
+    font-size:20px;
+}
+
+}
